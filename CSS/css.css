@@ -1,0 +1,10 @@
+body {
+	margin: 0 auto;
+	width: 960px;
+
+	background-image: url('../Media/Images/cosmonaut.jpg');
+}
+
+h2 {
+	text-shadow: 0 0 .3ex cyan;
+}
