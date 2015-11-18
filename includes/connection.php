@@ -1,10 +1,10 @@
 <?php
 	$server = "tsuts.tskoli.is";
-	$user = "2004972609";
-	$pass = "emilmonster42";
+	$user = "2808982529";
+	$pass = "mypassword";
 
 	try {
-		$con = new PDO ("mysql:host=$server;dbname=2004972609_radstefna", $user, $pass);
+		$con = new PDO ("mysql:host=$server;dbname=2808982529_Ramus", $user, $pass);
 		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$con->exec('SET NAMES "utf8"');
 	} catch (PDOException $e) {
