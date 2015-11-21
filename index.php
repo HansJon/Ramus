@@ -10,9 +10,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-  <div class="bgImage"></div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+
+    <?php
+      session_start();
+
+      echo $_SESSION['uid'];
+    ?>
 
     <div class="container">
       <div class="row">
@@ -98,7 +103,7 @@
         <div class="col grid-example s12 m6 l3 purple lighten-3"><span class="flow-text">s12 m6 l3</span></div>
       </div>
 
-      <blockquote>
+      <blockquote cite="http://google.com">
         <p>Hello there.</p>
         <p>Are you seeing this?</p>
       </blockquote>

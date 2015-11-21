@@ -1,7 +1,7 @@
 <?php
 	$server = "tsuts.tskoli.is";
 	$user = "2808982529";
-	$pass = "mypassword";
+	$pass = "Strákarnir eru meðetta";
 
 	try {
 		$con = new PDO ("mysql:host=$server;dbname=2808982529_Ramus", $user, $pass);
