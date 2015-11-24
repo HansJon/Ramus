@@ -25,15 +25,15 @@
 		$attemptHash = hash('sha512', $password . $DB_salt);
 
 		if ($attemptHash == $DB_hash) {
-			echo 'Password correct, establishing connecton to infrastructure...';
+			echo 'Password correct, establishing connection to infrastructure...';
 			
 			// Session starts and logs in user
 			session_start();
 			$_SESSION['uid'] = $DB_ID;
 
-			header("Location: index.php");
+			header("Location: branches.php");
 		} else {
-			echo 'Password is unfortunetely incorrect, please try again.';
+			echo 'Password is unfortunately incorrect, please try again.';
 		}
 
 	} catch (PDOException $e) {
