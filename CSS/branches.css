@@ -1,3 +1,10 @@
+body {
+	background-image: url('/Media/Images/GreenBlur1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
 h3 {
 	font-size: 30px;
 	text-align: center;
@@ -5,22 +12,19 @@ h3 {
 h4 {
 	margin: 0px;
 }
+/*
 div.image{
-<<<<<<< HEAD
-	content: url('../Media/Images/GreenBlur1.jpg');
-=======
-	content: url(../Media/Images/GalaxyBackground.jpg);
->>>>>>> origin/master
+	content: url('/Media/Images/GreenBlur1.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    position: absolute;
+    /*position: absolute;*/
     position: fixed;
     z-index: -1; 
     width: 100%;
 	height: 100%;
 }
-<<<<<<< HEAD
+*/
 i {
 	/*width: 100%;*/
 }
@@ -34,42 +38,24 @@ nav {
 	padding-right: 5px;
 }
 
-.colorbranch:hover {
+.branch:hover {
 	cursor: pointer;
 }
 
 .BranchWrapper a {
 	color: black;
-=======
-p {
-	padding: 3px;
-}
-i {
-	
-	width: 100%;
-
-}
-nav {
-	background-color: #1e847b ;
->>>>>>> origin/master
 }
 
-.colorbranch {
+.branch {
 	opacity: 0.9;
 	background: white;
-<<<<<<< HEAD
 
 	padding: 10px;
+	height: 400px;
 }
-.colorbranch:hover {
+.branch:hover {
 	background: #4db6ac;
 	color: white;
-=======
-}
-.colorbranch:hover {
-	 background: #4db6ac;
-	 color: white;
->>>>>>> origin/master
 }
 .boxicon {
 	margin: 0 auto;
@@ -89,7 +75,6 @@ nav {
 	height: 100%;
 	margin: 0px 0px 0px 0px;
 	display: inline-block;
-<<<<<<< HEAD
 }
 .ramus{
 	width: 70px;
@@ -112,15 +97,3 @@ nav {
 .branches_right {
 
 }
-=======
-
-}
-.ramus{
-width: 70px;
-height: 100%;
-}
-.row  {
-	margin-bottom: -15px;
-	padding-top: 15px;
-}
->>>>>>> origin/master
