@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/branches.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="CSS/css.css" media="screen" charset="utf-8">
   </head>
   <body>
@@ -26,6 +27,10 @@
           formatSubmit: 'yyyy-mm-dd'
         });
     </script>
+
+    <?php
+      include 'includes/navbar.php';
+    ?>
 
 <div class="container">
     <div class="row">
@@ -104,10 +109,10 @@
             </div>
     -->
 
-            <button class="btn waves-effect waves-light" type="submit" name="x">
-              Enter The World
-              <i class="material-icons right">send</i>
-            </button>
+          <button class="btn waves-effect waves-light" type="submit" name="x">
+            Enter The World
+            <i class="material-icons right">send</i>
+          </button>
         </form>
       </div>
     </div>

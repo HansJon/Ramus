@@ -2,9 +2,11 @@
 	echo '
 	<nav>
 		<div class="nav-wrapper">
-			<img class="ramus" src="http://www.ramus.xyz/Media/Images/Icons/Ramus.ico">
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="branches.php">Branches</a></li>';
+			<img class="ramus" src="http://www.ramus.xyz/Media/Images/Icons/RamusMaterial_1A.png">
+
+			<ul id="nav-mobile" class="right hide-on-small-only">
+				<li><a href="/branches.php"><i class="material-icons left">timeline</i>Branches</a></li>
+				<li><a href="/settings.php"><i class="material-icons left">settings</i>Settings</a></li>';
 
 					session_start();
 
@@ -19,14 +21,14 @@
 						$DB_Name = $row['name'];
 
 						if ($DB_Name != null) {
-							echo '<li><a href="user.php">' . $DB_Name . '</a></li>';
+							echo '<li><a href="/user.php"><i class="material-icons left">account_circle</i>' . $DB_Name . '</a></li>';
 						} else {
-							echo '<li><a href="user.php">' . $DB_User . '</a></li>';
+							echo '<li><a href="/user.php"><i class="material-icons left">account_circle</i>' . $DB_User . '</a></li>';
 						}
 						
-						echo '<li><a href="logout.php">Log out</a></li>';
+						echo '<li><a href="/logout.php"><i class="material-icons left">power_settings_new</i>Log out</a></li>';
 					} else {
-						echo '<li><a href="login.php">Login</a></li>';
+						echo '<li><a href="/login.php"><i class="material-icons left">forward</i>Login</a></li>';
 					}
 					
 	echo '</ul>

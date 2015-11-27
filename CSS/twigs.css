@@ -16,16 +16,14 @@ div.image{
     width: 100%;
 	height: 100%;
 }
-p {
-	padding: 3px;
-}
-i {
-	
-	width: 100%;
 
-}
+
 nav {
-	background-color: #1e847b ;
+	background-color: #1e847b;
+}
+
+nav ul a {
+	font-size: 1.2rem;
 }
 .visible {
 	padding: 3px;

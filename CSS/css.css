@@ -1,5 +1,5 @@
 body {
-	background-image: url('../Media/Images/cosmonaut.jpg');
+	background-image: url('../Media/Images/GreenBlur1.jpg');
 }
 
 h1 {
@@ -47,6 +47,16 @@ h1 {
 	}
 
 /* Materialize input colors ends */
+/*
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
+    -webkit-text-fill-color: black !important;
+}*/
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-color: white !important;
+}
 
 .divider {
 	background-color: #7B7B7B;
