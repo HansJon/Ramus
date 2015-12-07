@@ -8,24 +8,30 @@
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link href="https://code.jquery.com/jquery-2.1.4.min.js">
 		<link rel="stylesheet" type="text/css" href="/CSS/subsidium.css">
-		<style type="text/css">
-		h1 {
-			text-align: center;
-			vertical-align: middle;
-			line-height: 90%;
-			font-size: 90px;
-		}
-		.col {
-			  width: 100%;
-			  height: 90%;
-			 }
-		</style>
 	</head>
 	<body>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>	
 				<?php
-					include '../../includes/navbar.php';
+					include '../../../includes/navbar.php';
 				?>
-				<div class="col s12"><h1>Work in pogress</h1></div>
+			  
+			  <div class="row">
+			  <div Class="BranchWrapper col s12 m12 l6 ">
+			  	<a href="http://www.ramus.xyz/twigs/compsci/subsidium/hardware/questions.php">
+			  	<div class="branch" id="hardwareQuestions"><h3>Questions</h3>
+			  	</div>
+			  	</a>
+			  </div>
+			  <div Class="BranchWrapper col s12 m12 l6 ">
+			  	<a href="http://www.ramus.xyz/twigs/compsci/subsidium/hardware/review.php">
+			  	<div class="branch" id="hardwareReviews"><h3>Reviews</h3>
+			  	</div>
+			  	</a>	
+			  </div>
+			  <div class="BranchWrapper col s12 m12 ">
+			  	<div class="branch" id="hardwareBottom">
+			  	</div>
+			  </div>
+			  </div>
 	</body>
 </html>
