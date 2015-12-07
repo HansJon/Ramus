@@ -9,6 +9,7 @@
     <link rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="CSS/css.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/form.css">
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -27,6 +28,10 @@
         });
     </script>
 
+    <?php
+      //include 'includes/navbar.php';
+    ?>
+
 <div class="container">
     <div class="row">
       <div id="signupForm" class="z-depth-3">
@@ -34,23 +39,23 @@
             <h1 class="flow-text">Enter the first day of the rest of your life</h1>
 
             <div class="input-field">
-              <input id="username" type="text" class="validate" name="username" required>
+              <input id="username" type="text" class="validate" name="username" autocomplete="off" required>
               <label for="username">Username *</label>
             </div>
             <div class="input-field">
-              <input id="name" type="text" class="validate" name="name">
+              <input id="name" type="text" class="validate" name="name" autocomplete="off">
               <label for="name">Full Name</label>
             </div>
             <div class="input-field">
-              <input id="email" type="email" class="validate" name="email" required>
+              <input id="email" type="email" class="validate" name="email" autocomplete="off" required>
               <label data-error="Please enter a valid address" for="email">Email Address *</label>
             </div>
             <div class="input-field">
-              <input id="password" type="password" class="validate" name="password" required>
+              <input id="password" type="password" class="validate" name="password" autocomplete="off" required>
               <label for="password">Password *</label>
             </div>
             <div class="input-field">
-              <input id="phone" type="tel" class="validate" name="phone">
+              <input id="phone" type="tel" class="validate" name="phone" autocomplete="off">
               <label for="phone">Phone number</label>
             </div>
 
@@ -104,10 +109,10 @@
             </div>
     -->
 
-            <button class="btn waves-effect waves-light" type="submit" name="x">
-              Enter The World
-              <i class="material-icons right">send</i>
-            </button>
+          <button class="btn waves-effect waves-light" type="submit" name="x">
+            Enter The World
+            <i class="material-icons right">send</i>
+          </button>
         </form>
       </div>
     </div>

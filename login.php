@@ -9,6 +9,7 @@
     <link rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="CSS/css.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/form.css">
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -25,7 +26,7 @@
               <label for="username">Username or Email</label>
             </div>
             <div class="input-field">
-              <input id="password" type="password" class="validate" name="password" required>
+              <input id="password" type="password" class="validate" name="password" autocomplete="off" required>
               <label for="password">Password</label>
             </div>
 
@@ -34,6 +35,12 @@
               Enter The World
               <i class="material-icons right">send</i>
             </button>
+            <a href="signup.php">
+              <button class="btn waves-effect waves-light" type="button">
+                Create account
+                <i class="material-icons right">send</i>
+              </button>
+            </a>
         </form>
       </div>
     </div>

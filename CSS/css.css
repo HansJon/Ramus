@@ -1,6 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 body {
-	background-image: url('../Media/Images/cosmonaut.jpg');
+	background-color: #3A89BD;
 }
+
+nav {
+	/*background-color: #1e847b;*/
+	background-color: #2980B9;
+	position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 999999;
+    height: 65px;
+}
+
+nav ul a {
+	font-size: 1.2rem;
+}
+
+
+#navSpacing {
+	height: 65px;
+}
+
+.ramus {
+	width: 70px;
+	height: 100%;
+}
+
+.BranchWrapper {
+	margin-bottom: 2,5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.BranchWrapper a {
+	color: black;
+}
+
+.branch {
+	opacity: 0.9;
+	background: white;
+
+	padding: 10px;
+	height: 500px;
+}
+
+.branch:hover {
+	/*background: #3E95CE;*/
+	background-color: #006AAF;
+	color: white;
+	cursor: pointer;
+}
+
+.row {
+	padding-bottom: -5px;
+	padding-top: 5px;
+}
+
+.row .col {
+	padding: 8px;
+}
+
+
+#WelcomeBanner {
+	background-image: url('/Media/Images/SolarEclipse.jpg');
+}
+
+#OurStory {
+	background-image: url('/Media/Images/SunriseGlory.jpg');
+}
+
+#OurGoal {
+	background-image: url('/Media/Images/YosemiteFall.jpg');
+}
+
+.Banner
+{
+	position: relative;
+	/*background-image: url("http://pre02.deviantart.net/74f0/th/pre/f/2011/335/8/6/fantasy_space_by_ruhhbs-d4hukwr.jpg");*/
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	background-size: 100% 750px;
+	height: 750px;
+	width: 100%;
+	clear: both;
+	/*z-index: -999998;*/
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+.Banner .whoAreWeTitle {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+
+	font-family: 'Lato', sans-serif;
+
+	-webkit-animation: floatFromLeft 5s; /* Chrome, Safari, Opera */
+	animation: floatFromLeft 3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.Banner .whoAreWe {
+	position: absolute;
+	top: 200px;
+	width: 600px;
+
+	/*font-size: 2em;*/
+
+	-webkit-animation: floatFromRight 5s; /* Chrome, Safari, Opera */
+	animation: floatFromRight 3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.Banner p {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px;
+}
+
+#OurGoal h2 {
+	color: black;
+}
+
+@-webkit-keyframes floatFromLeft {
+	from {right: 100%;}
+	to {right: 0%;}
+}
+
+@keyframes floatFromLeft {
+	from {right: 100%;}
+	to {right: 0%;}
+}
+
+
+@-webkit-keyframes floatFromRight {
+	from {left: 100%;}
+	to {left: calc(50% - 300px);}
+}
+
+/* Standard syntax */ 
+@keyframes floatFromRight {
+	from {left: 100%;}
+	to {left: calc(50% - 300px);}
+}
+
+.BannerScrollBtn {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 100%;
+	/*display: inline-block;*/
+	left: calc(50% - 35px);
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+}
+
+.BannerScrollBtn i {
+	font-size: 60px;
+	color: white;
+}
+
+.BannerScrollBtn a {
+	width: 60px;
+	height: 60px;
+}
+
+#IntroTitle {
+	color: white;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+
 
 h1 {
 	margin-top: 0px;
@@ -47,7 +222,67 @@ h1 {
 	}
 
 /* Materialize input colors ends */
+/*
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
+    -webkit-text-fill-color: black !important;
+}*/
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-color: white !important;
+}
 
 .divider {
 	background-color: #7B7B7B;
+}
+
+.card .card-action {
+	border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 601px) {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+		height: 65px;
+		line-height: 65px;
+	}
+
+	nav {
+		/*background-color: #1e847b;*/
+		/*background-color: #2980B9;*/
+		/*background-color: black;*/
+		
+		/* top: 0; */
+		/* left: 0; */
+		z-index: -999999;
+		height: 65px;
+	}
+
+	.Banner .whoAreWe {
+		/*font-size: 1.5em;*/
+		width: 300px;
+
+		-webkit-animation: floatFromRight 5s; /* Chrome, Safari, Opera */
+		animation: floatFromRight 3s;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes floatFromRight {
+		from {left: 100%;}
+		to {left: calc(50% - 150px);}
+	}
+
+	@keyframes floatFromRight {
+		from {left: 100%;}
+		to {left: calc(50% - 150px);}
+	}
+
 }

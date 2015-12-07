@@ -1,0 +1,62 @@
+body {
+	background-image: url('/Media/Images/cosmonaut.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#signupForm {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+}
+
+/* Materialize input colors */
+
+/* label color */
+	.input-field label {
+	 color: #000;
+	}
+	/* label focus color */
+	#signupForm input:focus + label {
+	 color: #000;
+	}
+	/* label underline focus color */
+	#signupForm input:focus {
+	 border-bottom: 1px solid #000;
+	 box-shadow: 0 1px 0 0 #000;
+	}
+	/* valid color */
+	#signupForm input.valid {
+	 border-bottom: 1px solid lime;
+	 box-shadow: 0 1px 0 0 lime;
+	}
+	/* invalid color */
+	#signupForm input.invalid {
+	 border-bottom: 1px solid red;
+	 box-shadow: 0 1px 0 0 red;
+	}
+	/* icon prefix focus color */
+	.input-field .prefix.active {
+	 color: #000;
+	}
+
+/* Materialize input colors ends */
+/*
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
+    -webkit-text-fill-color: black !important;
+}*/
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-color: white !important;
+}
+
+.divider {
+	background-color: #7B7B7B;
+}
