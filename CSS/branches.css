@@ -1,12 +1,16 @@
 body {
-	background-image: url('/Media/Images/GreenBlur1.jpg');
+	/*background-image: url('/Media/Images/GreenBlur1.jpg');
+	*/
+	background-color: #3A89BD;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
 
 nav {
-	background-color: #1e847b;
+	/*background-color: #1e847b;*/
+	background-color: #2980B9;
 }
 
 nav ul a {
@@ -32,7 +36,8 @@ nav ul a {
 }
 
 .branch:hover {
-	background: #4db6ac;
+	/*background: #4db6ac;*/
+	background: #3E95CE;
 	color: white;
 	cursor: pointer;
 }

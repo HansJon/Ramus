@@ -16,9 +16,25 @@
 				?>
 			  
 			  <div class="row">
-			  <div Class="BranchWrapper col s12 m6 "><div class="branch" id="hard"><h3>Hardware</h3></div></div>
-			  <div Class="BranchWrapper col s12 m6 "><div class="branch" id="soft"><h3>Software</h3></div></div>
-			  <div class="BranchWrapper col s12 "><div class="branch" id="softHard"><h3>Subsidium</h3></div></div>
+				  <div Class="BranchWrapper col s12 m12 l6 ">
+				  	<a href="http://www.ramus.xyz/twigs/compsci/subsidium/hardware.php">
+				  	<div class="branch" id="hard"><h3>Hardware</h3>
+				  	</div>
+				  	</a>
+				  </div>
+				  
+				  <div Class="BranchWrapper col s12 m12 l6 ">
+				  	<a href="http://www.ramus.xyz/twigs/compsci/subsidium/software.php">
+				  	<div class="branch" id="soft"><h3>Software</h3>
+				  	</div>
+				    </a>
+				  </div>
+				  
+				  <div class="BranchWrapper col s12 m12 ">
+				  	<div class="branch" id="softHard"><h3>Subsidium</h3>
+				  	<p class="subtext">choose between Hardware or Software</p>
+				  	</div>
+				  </div>
 			  </div>
 	</body>
 </html>

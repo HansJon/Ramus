@@ -28,7 +28,8 @@
 				$URL = $row['destinationURL'];
 
 				echo '
-					<div class="BranchWrapper col s12 m6 l3"><a href="' . $URL . '">
+					<div class="BranchWrapper col s12 m6 l3">
+						<a href="' . $URL . '">
 							<div class="branch">
 								<center>
 									<i class="large material-icons">' . $icon . '</i>

@@ -1,7 +1,12 @@
 body {
-	background-image: url('/Media/Images/GreenBlur1.jpg');
+	/*background-image: url('/Media/Images/GreenBlur1.jpg');*/
+	background-color: #3A89BD;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+#nav {
+	background-color: #2980B9;
 }
 
 #cover {
@@ -26,4 +31,8 @@ body {
 	border: 1px solid black;
 	padding: 5px;
 	margin: 0;
+}
+
+button {
+	width: 100%;
 }
